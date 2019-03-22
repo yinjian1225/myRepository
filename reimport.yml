@@ -9,3 +9,5 @@ reimport:
     batchSize: 50
     pollInternal: 2000
   partitionNum: 24
+  
+name: yinjian
