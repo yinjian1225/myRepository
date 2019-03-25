@@ -1,1 +1,13 @@
-
+reimport:
+  kafka:
+    servers: bigdata-dev01:6667,bigdata-dev02:6667
+    topic: reimport-app-.*
+    groupId: 0
+    autoCommit: false
+    keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+    valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+    batchSize: 50
+    pollInternal: 2000
+  partitionNum: 24
+  
+name: yinjia
